@@ -152,7 +152,7 @@ public class lessonB_MapAndFlatMapAndBasicOperators {
                 new ElevatorPassenger("Jacqueline", 114));
         Observable<ElevatorPassenger> elevatorPassengersObservable = Observable.from(elevatorPassengers);
         /**
-         * http://reactivex.io/documentation/operators/reduce.html
+         *
          */
         elevatorPassengersObservable.reduce(0, (accumulatedWeight, elevatorPassenger) ->
                 elevatorPassenger.mWeightInPounds + accumulatedWeight)
